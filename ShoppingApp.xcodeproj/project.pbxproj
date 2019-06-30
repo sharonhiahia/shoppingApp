@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		9696BB4222C93311006EC88C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9696BB4122C93311006EC88C /* AppDelegate.swift */; };
-		9696BB4422C93311006EC88C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9696BB4322C93311006EC88C /* ViewController.swift */; };
+		9696BB4422C93311006EC88C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9696BB4322C93311006EC88C /* LoginViewController.swift */; };
 		9696BB4722C93311006EC88C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9696BB4522C93311006EC88C /* Main.storyboard */; };
 		9696BB4922C93312006EC88C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9696BB4822C93312006EC88C /* Assets.xcassets */; };
 		9696BB4C22C93312006EC88C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9696BB4A22C93312006EC88C /* LaunchScreen.storyboard */; };
 		9696BB5722C93312006EC88C /* ShoppingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9696BB5622C93312006EC88C /* ShoppingAppTests.swift */; };
 		9696BB6222C93312006EC88C /* ShoppingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9696BB6122C93312006EC88C /* ShoppingAppUITests.swift */; };
+		9696BB7022C935A0006EC88C /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9696BB6F22C935A0006EC88C /* MainTabController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		9696BB3E22C93311006EC88C /* ShoppingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9696BB4122C93311006EC88C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9696BB4322C93311006EC88C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9696BB4322C93311006EC88C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9696BB4622C93311006EC88C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9696BB4822C93312006EC88C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9696BB4B22C93312006EC88C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		9696BB5D22C93312006EC88C /* ShoppingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShoppingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9696BB6122C93312006EC88C /* ShoppingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingAppUITests.swift; sourceTree = "<group>"; };
 		9696BB6322C93312006EC88C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9696BB6F22C935A0006EC88C /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +100,12 @@
 			isa = PBXGroup;
 			children = (
 				9696BB4122C93311006EC88C /* AppDelegate.swift */,
-				9696BB4322C93311006EC88C /* ViewController.swift */,
+				9696BB4322C93311006EC88C /* LoginViewController.swift */,
 				9696BB4522C93311006EC88C /* Main.storyboard */,
 				9696BB4822C93312006EC88C /* Assets.xcassets */,
 				9696BB4A22C93312006EC88C /* LaunchScreen.storyboard */,
 				9696BB4D22C93312006EC88C /* Info.plist */,
+				9696BB6F22C935A0006EC88C /* MainTabController.swift */,
 			);
 			path = ShoppingApp;
 			sourceTree = "<group>";
@@ -256,8 +259,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9696BB4422C93311006EC88C /* ViewController.swift in Sources */,
+				9696BB4422C93311006EC88C /* LoginViewController.swift in Sources */,
 				9696BB4222C93311006EC88C /* AppDelegate.swift in Sources */,
+				9696BB7022C935A0006EC88C /* MainTabController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
