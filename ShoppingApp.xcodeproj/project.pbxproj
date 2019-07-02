@@ -88,6 +88,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9679928322CC072F00A8A238 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9648893622CA82FA0003786B /* Item.swift */,
+				9648893B22CACD060003786B /* Cart.swift */,
+				9648893822CA83E90003786B /* MyItems.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9679928422CC073A00A8A238 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9696BB4522C93311006EC88C /* Main.storyboard */,
+				9696BB4A22C93312006EC88C /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9679928522CC073F00A8A238 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9696BB6F22C935A0006EC88C /* MainTabController.swift */,
+				9696BB4322C93311006EC88C /* LoginViewController.swift */,
+				9605024C22C9502F0063F23B /* ItemPageController.swift */,
+				9605024E22C953010063F23B /* ListItemsViewController.swift */,
+				9644DF3222CAD90B00C19D27 /* ShoppingCartViewController.swift */,
+				9696BB4122C93311006EC88C /* AppDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		9696BB3522C93311006EC88C = {
 			isa = PBXGroup;
 			children = (
@@ -111,19 +143,11 @@
 		9696BB4022C93311006EC88C /* ShoppingApp */ = {
 			isa = PBXGroup;
 			children = (
-				9696BB4122C93311006EC88C /* AppDelegate.swift */,
-				9696BB4322C93311006EC88C /* LoginViewController.swift */,
-				9696BB4522C93311006EC88C /* Main.storyboard */,
+				9679928522CC073F00A8A238 /* Controller */,
+				9679928422CC073A00A8A238 /* View */,
+				9679928322CC072F00A8A238 /* Model */,
 				9696BB4822C93312006EC88C /* Assets.xcassets */,
-				9696BB4A22C93312006EC88C /* LaunchScreen.storyboard */,
 				9696BB4D22C93312006EC88C /* Info.plist */,
-				9696BB6F22C935A0006EC88C /* MainTabController.swift */,
-				9605024C22C9502F0063F23B /* ItemPageController.swift */,
-				9605024E22C953010063F23B /* ListItemsViewController.swift */,
-				9648893622CA82FA0003786B /* Item.swift */,
-				9648893822CA83E90003786B /* MyItems.swift */,
-				9648893B22CACD060003786B /* Cart.swift */,
-				9644DF3222CAD90B00C19D27 /* ShoppingCartViewController.swift */,
 			);
 			path = ShoppingApp;
 			sourceTree = "<group>";
