@@ -21,13 +21,15 @@ class ShoppingCartViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         instanciateLables()
         initUILabels()
         
         
         tot.frame = CGRect(x: 150, y: 400, width: 300, height: 50)
         
-        tot.text = ""
+        tot.text = "Total: 0.00"
         tot.font = UIFont(name:"verdana", size: 30)
         tot.textColor = .black
         tot.textAlignment = .left
@@ -36,6 +38,23 @@ class ShoppingCartViewController: UIViewController{
         getTotal()
 
     }
+    
+    
+//    override func viewWillAppear(_ animated: Bool) {
+//        super.viewWillAppear(false)
+//        instanciateLables()
+//        initUILabels()
+//
+//
+//        tot.frame = CGRect(x: 150, y: 400, width: 300, height: 50)
+//
+//        tot.text = "Total: 0.00"
+//        tot.font = UIFont(name:"verdana", size: 30)
+//        tot.textColor = .black
+//        tot.textAlignment = .left
+//        self.view.addSubview(tot)
+//        getTotal()
+//    }
     
     func instanciateLables(){
         for k in Cart.shared.list{
@@ -54,10 +73,10 @@ class ShoppingCartViewController: UIViewController{
     
     func initUILabels(){
         for l in 0..<keys.count{
-            list[l].frame = CGRect(x: 10, y: l * 40 + 100, width: 300, height: 30)
+            list[l].frame = CGRect(x: 30, y: l * 50 + 120, width: 330, height: 50)
             let num = Cart.shared.list[keys[l]]
             list[l].text = keys[l] + " \(num!)"
-            list[l].font = UIFont(name:"verdana", size: 20)
+            list[l].font = UIFont(name:"verdana", size: 25)
             list[l].textColor = .black
             list[l].textAlignment = .left
             self.view.addSubview(list[l])
@@ -86,15 +105,17 @@ class ShoppingCartViewController: UIViewController{
         
     }
     
-    func upDateUILabels(){
-        
+    func update(){
+        instanciateLables()
+        initUILabels()
+        getTotal()
     }
     
     @IBAction func checkout(_ sender: Any) {
         for l in list{
             l.text = ""
         }
-        tot.text = "Total: \(0.00)"
+        tot.text = "Total: 0.00"
         
         
     }

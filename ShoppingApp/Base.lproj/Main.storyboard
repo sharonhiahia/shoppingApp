@@ -47,7 +47,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xLg-mS-1tI">
-                                <rect key="frame" x="205" y="535" width="121" height="47"/>
+                                <rect key="frame" x="224" y="541" width="121" height="47"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                 <state key="normal" title="Checkout"/>
                                 <connections>
@@ -57,9 +57,9 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.77545040005910548" blue="0.53884571209184129" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="xLg-mS-1tI" firstAttribute="leading" secondItem="tDX-wm-Ptx" secondAttribute="leading" constant="205" id="Mc7-t4-FPg"/>
-                            <constraint firstItem="xLg-mS-1tI" firstAttribute="top" secondItem="tDX-wm-Ptx" secondAttribute="top" constant="515" id="Yhx-m9-pdm"/>
-                            <constraint firstItem="tDX-wm-Ptx" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="xLg-mS-1tI" secondAttribute="trailing" symbolic="YES" id="myc-Tz-Yjr"/>
+                            <constraint firstItem="xLg-mS-1tI" firstAttribute="leading" secondItem="tDX-wm-Ptx" secondAttribute="leading" constant="224" id="BMK-Rm-4xF"/>
+                            <constraint firstItem="tDX-wm-Ptx" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="xLg-mS-1tI" secondAttribute="trailing" id="NaW-kW-lpx"/>
+                            <constraint firstItem="tDX-wm-Ptx" firstAttribute="bottom" secondItem="xLg-mS-1tI" secondAttribute="bottom" constant="30" id="uBC-kM-TRS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tDX-wm-Ptx"/>
                     </view>
