@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9605024D22C9502F0063F23B /* ItemPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605024C22C9502F0063F23B /* ItemPageController.swift */; };
 		9605024F22C953010063F23B /* ListItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605024E22C953010063F23B /* ListItemsViewController.swift */; };
+		9644DF3322CAD90B00C19D27 /* ShoppingCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9644DF3222CAD90B00C19D27 /* ShoppingCartViewController.swift */; };
 		9648893722CA82FA0003786B /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9648893622CA82FA0003786B /* Item.swift */; };
 		9648893922CA83E90003786B /* MyItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9648893822CA83E90003786B /* MyItems.swift */; };
 		9648893C22CACD060003786B /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9648893B22CACD060003786B /* Cart.swift */; };
@@ -42,6 +43,7 @@
 /* Begin PBXFileReference section */
 		9605024C22C9502F0063F23B /* ItemPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemPageController.swift; sourceTree = "<group>"; };
 		9605024E22C953010063F23B /* ListItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemsViewController.swift; sourceTree = "<group>"; };
+		9644DF3222CAD90B00C19D27 /* ShoppingCartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartViewController.swift; sourceTree = "<group>"; };
 		9648893622CA82FA0003786B /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		9648893822CA83E90003786B /* MyItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyItems.swift; sourceTree = "<group>"; };
 		9648893B22CACD060003786B /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				9648893622CA82FA0003786B /* Item.swift */,
 				9648893822CA83E90003786B /* MyItems.swift */,
 				9648893B22CACD060003786B /* Cart.swift */,
+				9644DF3222CAD90B00C19D27 /* ShoppingCartViewController.swift */,
 			);
 			path = ShoppingApp;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 			files = (
 				9696BB4422C93311006EC88C /* LoginViewController.swift in Sources */,
 				9696BB4222C93311006EC88C /* AppDelegate.swift in Sources */,
+				9644DF3322CAD90B00C19D27 /* ShoppingCartViewController.swift in Sources */,
 				9605024F22C953010063F23B /* ListItemsViewController.swift in Sources */,
 				9696BB7022C935A0006EC88C /* MainTabController.swift in Sources */,
 				9648893722CA82FA0003786B /* Item.swift in Sources */,
@@ -457,12 +461,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AAPSUJSHRK;
 				INFOPLIST_FILE = ShoppingApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = rx.ShoppingApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rongxiao.shoppingapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -474,12 +479,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AAPSUJSHRK;
 				INFOPLIST_FILE = ShoppingApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = rx.ShoppingApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rongxiao.shoppingapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

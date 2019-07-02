@@ -38,14 +38,29 @@
             </objects>
             <point key="canvasLocation" x="-919" y="82"/>
         </scene>
-        <!--View Controller-->
+        <!--Shopping Cart View Controller-->
         <scene sceneID="diU-cJ-hUg">
             <objects>
-                <viewController id="Vud-us-1A1" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ShoppingCartViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Vud-us-1A1" customClass="ShoppingCartViewController" customModule="ShoppingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KBz-gf-AYq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xLg-mS-1tI">
+                                <rect key="frame" x="205" y="535" width="121" height="47"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <state key="normal" title="Checkout"/>
+                                <connections>
+                                    <action selector="checkout:" destination="Vud-us-1A1" eventType="touchUpInside" id="rdc-Wg-hWD"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="0.77545040005910548" blue="0.53884571209184129" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xLg-mS-1tI" firstAttribute="leading" secondItem="tDX-wm-Ptx" secondAttribute="leading" constant="205" id="Mc7-t4-FPg"/>
+                            <constraint firstItem="xLg-mS-1tI" firstAttribute="top" secondItem="tDX-wm-Ptx" secondAttribute="top" constant="515" id="Yhx-m9-pdm"/>
+                            <constraint firstItem="tDX-wm-Ptx" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="xLg-mS-1tI" secondAttribute="trailing" symbolic="YES" id="myc-Tz-Yjr"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="tDX-wm-Ptx"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="downloads" id="CKc-LB-1jv"/>
@@ -61,14 +76,27 @@
                     <view key="view" contentMode="scaleToFill" id="qxq-to-OrF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1xu-sZ-Fxt">
+                                <rect key="frame" x="163.5" y="318.5" width="48" height="30"/>
+                                <state key="normal" title="Logout"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="caM-U1-D7r"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.83950753708422543" green="1" blue="0.75966515490953168" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1xu-sZ-Fxt" firstAttribute="centerX" secondItem="qxq-to-OrF" secondAttribute="centerX" id="APw-zs-rGl"/>
+                            <constraint firstItem="1xu-sZ-Fxt" firstAttribute="centerY" secondItem="qxq-to-OrF" secondAttribute="centerY" id="CvX-By-sBT"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="EAz-sa-GH5"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="history" id="Fxh-Jz-qv7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eNW-8E-XCT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-114" y="836"/>
+            <point key="canvasLocation" x="-114" y="870"/>
         </scene>
         <!--List Items View Controller-->
         <scene sceneID="ONQ-lI-rFp">
@@ -351,6 +379,9 @@
                                         <rect key="frame" x="185" y="469" width="182" height="62"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <state key="normal" title="Add To Cart"/>
+                                        <connections>
+                                            <action selector="addTapped:" destination="iHR-02-HIi" eventType="touchUpInside" id="XaC-v5-I92"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mit-4r-BT9">
                                         <rect key="frame" x="8" y="478" width="55" height="44"/>

@@ -10,12 +10,24 @@ import Foundation
 
 
 class Cart {
-    var list = [String:Int]()
+    static let shared = Cart()
+    
+    var list = ["Nice bracelet": 0,
+                       "Pretty ring": 0,
+                       "Rose gold ring": 0,
+                       "Wow bracelet": 0]
     init(){
-        list = ["Nice bracelet": 0,
-                "Pretty ring": 0,
-                "Rose gold ring": 0,
-                "Wow bracelet": 0]
     }
     
+    func updateCart(_ key:String, _ num: Int){
+        print("passed in: " + key + "\(num)")
+        
+        var value:Int = list[key]!
+        value += num
+        print("new value \(value)")
+        list[key] = value
+    }
+    
+    
 }
+

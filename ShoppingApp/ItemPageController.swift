@@ -9,8 +9,16 @@
 import Foundation
 import UIKit
 
+//sender
+
+//protocol ChangeCartDelegate:AnyObject {
+//    func userAddedItems(name:String, num:Int)
+//}
 
 class ItemPageController: UIViewController {
+    
+    //var delegate : ChangeCartDelegate?
+    
     @IBOutlet weak var numToAdd: UILabel!
     
     @IBOutlet weak var img: UIImageView!
@@ -29,6 +37,7 @@ class ItemPageController: UIViewController {
         let itemname = theItems.items[receivedTag!-1].itemName
         let itemp = theItems.items[receivedTag!-1].itemPrice
         super.viewDidLoad()
+        
         //img.image = UIImage(named: recerivedImg ?? "1")
         //name.text = recerivedName
         //price.text = recerivedPrice
@@ -58,4 +67,25 @@ class ItemPageController: UIViewController {
         }
     }
     
+    @IBAction func addTapped(_ sender: Any) {
+        let numstr = numToAdd.text!
+        let num:Int = Int(numstr)!
+        print(num)
+        let itemname = theItems.items[receivedTag!-1].itemName
+        print(itemname)
+        Cart.shared.updateCart(itemname, num)
+        
+        
+        
+    
+    }
+    
+    
+//    @IBAction func goToCart(_ sender: Any) {
+//
+//
+//        delegate?.userAddedItems(name: itemname, num: num)
+//        print(itemname+"\(num)")
+//        print(delegate)
+//    }
 }
