@@ -11,6 +11,7 @@
 		9605024F22C953010063F23B /* ListItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605024E22C953010063F23B /* ListItemsViewController.swift */; };
 		9648893722CA82FA0003786B /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9648893622CA82FA0003786B /* Item.swift */; };
 		9648893922CA83E90003786B /* MyItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9648893822CA83E90003786B /* MyItems.swift */; };
+		9648893C22CACD060003786B /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9648893B22CACD060003786B /* Cart.swift */; };
 		9696BB4222C93311006EC88C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9696BB4122C93311006EC88C /* AppDelegate.swift */; };
 		9696BB4422C93311006EC88C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9696BB4322C93311006EC88C /* LoginViewController.swift */; };
 		9696BB4722C93311006EC88C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9696BB4522C93311006EC88C /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 		9605024E22C953010063F23B /* ListItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemsViewController.swift; sourceTree = "<group>"; };
 		9648893622CA82FA0003786B /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		9648893822CA83E90003786B /* MyItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyItems.swift; sourceTree = "<group>"; };
+		9648893B22CACD060003786B /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
 		9696BB3E22C93311006EC88C /* ShoppingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9696BB4122C93311006EC88C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9696BB4322C93311006EC88C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				9605024E22C953010063F23B /* ListItemsViewController.swift */,
 				9648893622CA82FA0003786B /* Item.swift */,
 				9648893822CA83E90003786B /* MyItems.swift */,
+				9648893B22CACD060003786B /* Cart.swift */,
 			);
 			path = ShoppingApp;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				9648893722CA82FA0003786B /* Item.swift in Sources */,
 				9605024D22C9502F0063F23B /* ItemPageController.swift in Sources */,
 				9648893922CA83E90003786B /* MyItems.swift in Sources */,
+				9648893C22CACD060003786B /* Cart.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

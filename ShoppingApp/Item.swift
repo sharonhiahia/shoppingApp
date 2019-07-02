@@ -10,14 +10,16 @@ import Foundation
 
 
 class Item {
-    var itemImg = ""
-    var itemName = ""
-    var itemPrice = ""
+    var itemImg:String
+    var itemName:String
+    var itemPrice:Double
+    var itemNum:Int
     
-    init(img:String, name:String, price: String) {
+    init(img:String, name:String, price: Double, num:Int) {
         itemImg = img
         itemName = name
         itemPrice = price
+        itemNum = num
     }
     
 }

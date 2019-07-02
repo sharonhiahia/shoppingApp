@@ -87,7 +87,7 @@
                                             <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ngv-rj-auv" userLabel="Item View">
                                                 <rect key="frame" x="0.0" y="0.0" width="169" height="229"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="kkw-Nk-g4d" userLabel="Image">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kkw-Nk-g4d" userLabel="Image">
                                                         <rect key="frame" x="0.0" y="0.0" width="169" height="128"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beautiful bracelet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cl6-YK-KcY" userLabel="Title">
@@ -134,7 +134,7 @@
                                             <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jdy-8y-anL" userLabel="Item View">
                                                 <rect key="frame" x="174" y="0.0" width="169" height="229"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="Aty-Un-EQ5" userLabel="Image">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Aty-Un-EQ5" userLabel="Image">
                                                         <rect key="frame" x="0.0" y="0.0" width="169" height="128"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beautiful bracelet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TvP-fg-Qp3" userLabel="Title">
@@ -189,7 +189,7 @@
                                             <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bfn-cb-6Pv" userLabel="Item View">
                                                 <rect key="frame" x="0.0" y="0.0" width="169" height="229"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="CuA-im-25e" userLabel="Image">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CuA-im-25e" userLabel="Image">
                                                         <rect key="frame" x="0.0" y="0.0" width="169" height="128"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="128" id="AKq-V4-Wke"/>
@@ -238,7 +238,7 @@
                                             <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2FL-jZ-41U" userLabel="Item View">
                                                 <rect key="frame" x="174" y="0.0" width="169" height="229"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="kEi-53-iZT" userLabel="Image">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kEi-53-iZT" userLabel="Image">
                                                         <rect key="frame" x="0.0" y="0.0" width="169" height="128"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beautiful bracelet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7bE-wp-PV8" userLabel="Title">
@@ -327,7 +327,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="hiS-rt-FD7">
-                                        <rect key="frame" x="0.0" y="0.0" width="367" height="371"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="371"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="371" id="FOM-bO-Tee"/>
                                         </constraints>
@@ -347,27 +347,65 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7oG-M3-j9b">
-                                        <rect key="frame" x="8" y="484" width="359" height="62"/>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7oG-M3-j9b">
+                                        <rect key="frame" x="185" y="469" width="182" height="62"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <state key="normal" title="Add To Cart"/>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mit-4r-BT9">
+                                        <rect key="frame" x="8" y="478" width="55" height="44"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <state key="normal" title="-"/>
+                                        <connections>
+                                            <action selector="decreaseNum:" destination="iHR-02-HIi" eventType="touchUpInside" id="kyZ-gJ-2QU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VCE-Sv-EcT">
+                                        <rect key="frame" x="111" y="478" width="66" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="66" id="R7d-sv-WeV"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <state key="normal" title="+"/>
+                                        <connections>
+                                            <action selector="increaseNum:" destination="iHR-02-HIi" eventType="touchUpInside" id="qIV-Vc-cDy"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jfq-KN-fmV">
+                                        <rect key="frame" x="71" y="478" width="32" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="32" id="jy0-F0-t71"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="jfq-KN-fmV" firstAttribute="leading" secondItem="Mit-4r-BT9" secondAttribute="trailing" constant="8" symbolic="YES" id="3XL-BX-GmM"/>
+                                    <constraint firstItem="VCE-Sv-EcT" firstAttribute="top" secondItem="jfq-KN-fmV" secondAttribute="top" id="4I3-BI-20a"/>
+                                    <constraint firstItem="7oG-M3-j9b" firstAttribute="top" secondItem="JaR-dK-Uro" secondAttribute="bottom" constant="3" id="5TD-5h-sM7"/>
+                                    <constraint firstItem="7oG-M3-j9b" firstAttribute="centerY" secondItem="jfq-KN-fmV" secondAttribute="centerY" id="5l0-fi-DS2"/>
                                     <constraint firstItem="JaR-dK-Uro" firstAttribute="trailing" secondItem="MrL-7S-OAH" secondAttribute="trailing" id="6F6-am-9A8"/>
+                                    <constraint firstItem="VCE-Sv-EcT" firstAttribute="leading" secondItem="jfq-KN-fmV" secondAttribute="trailing" constant="8" symbolic="YES" id="6Kz-nV-sZh"/>
                                     <constraint firstItem="hiS-rt-FD7" firstAttribute="leading" secondItem="5MF-G8-Ugh" secondAttribute="leading" id="7Wq-Ab-Ymj"/>
-                                    <constraint firstItem="7oG-M3-j9b" firstAttribute="leading" secondItem="JaR-dK-Uro" secondAttribute="leading" id="GPl-v3-77h"/>
+                                    <constraint firstItem="Mit-4r-BT9" firstAttribute="leading" secondItem="JaR-dK-Uro" secondAttribute="leading" id="81A-EF-7LT"/>
+                                    <constraint firstItem="jfq-KN-fmV" firstAttribute="leading" secondItem="5MF-G8-Ugh" secondAttribute="leading" constant="71" id="8IY-Pm-DOi"/>
+                                    <constraint firstItem="VCE-Sv-EcT" firstAttribute="centerY" secondItem="Mit-4r-BT9" secondAttribute="centerY" id="Fay-20-TNs"/>
+                                    <constraint firstAttribute="bottom" secondItem="7oG-M3-j9b" secondAttribute="bottom" constant="23" id="FoT-xo-kO9"/>
                                     <constraint firstItem="MrL-7S-OAH" firstAttribute="top" secondItem="hiS-rt-FD7" secondAttribute="bottom" constant="8" symbolic="YES" id="KvD-B9-CCl"/>
                                     <constraint firstItem="JaR-dK-Uro" firstAttribute="trailing" secondItem="5MF-G8-Ugh" secondAttribute="trailingMargin" id="L63-tj-6a3"/>
-                                    <constraint firstItem="hiS-rt-FD7" firstAttribute="trailing" secondItem="MrL-7S-OAH" secondAttribute="trailing" id="UJp-5p-0Cm"/>
+                                    <constraint firstItem="jfq-KN-fmV" firstAttribute="top" secondItem="JaR-dK-Uro" secondAttribute="bottom" constant="12" id="Qtk-HH-FBQ"/>
+                                    <constraint firstItem="hiS-rt-FD7" firstAttribute="trailing" secondItem="MrL-7S-OAH" secondAttribute="trailing" constant="8" id="UJp-5p-0Cm"/>
                                     <constraint firstItem="JaR-dK-Uro" firstAttribute="leading" secondItem="5MF-G8-Ugh" secondAttribute="leadingMargin" id="WNa-LU-Gmh"/>
+                                    <constraint firstItem="Mit-4r-BT9" firstAttribute="top" secondItem="jfq-KN-fmV" secondAttribute="top" id="aa3-wD-55I"/>
                                     <constraint firstItem="JaR-dK-Uro" firstAttribute="top" secondItem="MrL-7S-OAH" secondAttribute="bottom" constant="8" symbolic="YES" id="ae6-ER-IpM"/>
                                     <constraint firstItem="JaR-dK-Uro" firstAttribute="leading" secondItem="MrL-7S-OAH" secondAttribute="leading" id="bvU-mG-fgK"/>
-                                    <constraint firstItem="7oG-M3-j9b" firstAttribute="top" secondItem="JaR-dK-Uro" secondAttribute="bottom" constant="18" id="ffQ-Hx-4tw"/>
-                                    <constraint firstItem="7oG-M3-j9b" firstAttribute="bottom" secondItem="5MF-G8-Ugh" secondAttribute="bottomMargin" id="hqM-Ty-j5L"/>
+                                    <constraint firstItem="7oG-M3-j9b" firstAttribute="trailing" secondItem="JaR-dK-Uro" secondAttribute="trailing" id="fsl-ZK-AmJ"/>
+                                    <constraint firstItem="7oG-M3-j9b" firstAttribute="leading" secondItem="VCE-Sv-EcT" secondAttribute="trailing" constant="8" symbolic="YES" id="gcD-6z-dLe"/>
                                     <constraint firstAttribute="bottom" secondItem="MrL-7S-OAH" secondAttribute="bottom" constant="139" id="oJ3-Q8-EgX"/>
-                                    <constraint firstItem="7oG-M3-j9b" firstAttribute="trailing" secondItem="JaR-dK-Uro" secondAttribute="trailing" id="tmR-6u-tTy"/>
+                                    <constraint firstItem="VCE-Sv-EcT" firstAttribute="bottom" secondItem="jfq-KN-fmV" secondAttribute="bottom" id="yWf-Oa-GnK"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -383,6 +421,7 @@
                     <connections>
                         <outlet property="img" destination="hiS-rt-FD7" id="XgY-3P-mtt"/>
                         <outlet property="name" destination="MrL-7S-OAH" id="Nul-JV-eOm"/>
+                        <outlet property="numToAdd" destination="jfq-KN-fmV" id="NCw-x4-87Q"/>
                         <outlet property="price" destination="JaR-dK-Uro" id="2dT-is-RkX"/>
                     </connections>
                 </viewController>
@@ -429,7 +468,4 @@
             <point key="canvasLocation" x="840.79999999999995" y="-251.42428785607197"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="1" width="1560" height="2392"/>
-    </resources>
 </document>
