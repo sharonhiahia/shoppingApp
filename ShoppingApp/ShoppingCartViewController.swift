@@ -19,116 +19,77 @@ class ShoppingCartViewController: UIViewController{
     var keys = [String]()
     let tot = UILabel.init()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(false)
         
         instanciateLables()
-        initUILabels()
-        
-        
+        //initUILabels()
+
+
         tot.frame = CGRect(x: 150, y: 400, width: 300, height: 50)
-        
+
         tot.text = "Total: 0.00"
         tot.font = UIFont(name:"verdana", size: 30)
         tot.textColor = .black
         tot.textAlignment = .left
         self.view.addSubview(tot)
-        
         getTotal()
-
     }
-    
-    
-//    override func viewWillAppear(_ animated: Bool) {
-//        super.viewWillAppear(false)
-//        instanciateLables()
-//        initUILabels()
-//
-//
-//        tot.frame = CGRect(x: 150, y: 400, width: 300, height: 50)
-//
-//        tot.text = "Total: 0.00"
-//        tot.font = UIFont(name:"verdana", size: 30)
-//        tot.textColor = .black
-//        tot.textAlignment = .left
-//        self.view.addSubview(tot)
-//        getTotal()
-//    }
     
     func instanciateLables(){
-        for k in Cart.shared.list{
-            if k.value != 0{
-                keys.append(k.key)
-            }
-        }
-       
-        for _ in 0..<keys.count{
-            
-            let l = UILabel.init()
-            list.append(l)
-        }
 
-    }
-    
-    func initUILabels(){
-        for l in 0..<keys.count{
-            list[l].frame = CGRect(x: 30, y: l * 50 + 120, width: 330, height: 50)
-            let num = Cart.shared.list[keys[l]]
-            list[l].text = keys[l] + " \(num!)"
-            list[l].font = UIFont(name:"verdana", size: 25)
-            list[l].textColor = .black
-            list[l].textAlignment = .left
-            self.view.addSubview(list[l])
+        for l in list{
+            l.removeFromSuperview()
+        }
+        
+        list = []
+        var i = 0
+        
+        for k in Cart.shared.list{
+            if k.value != 0 {
+                let l = UILabel.init()
+                list.append(l)
+                
+                l.frame = CGRect(x: 30, y: i * 50 + 120, width: 330, height: 50)
+                
+                let num = k.value
+                l.text = k.key + "        \(num)"
+                
+                l.font = UIFont(name:"verdana", size: 25)
+                l.textColor = .black
+                l.textAlignment = .left
+                
+                self.view.addSubview(l)
+                i += 1
+            }
         }
     }
     
     func getTotal(){
         var sum:Double = 0
-        for k in keys{
-            for j in 0 ..< theItems.items.count{
-                if theItems.items[j].itemName == k {
-                    let num:Int = Cart.shared.list[k]!
-                    sum += theItems.items[j].itemPrice * Double(num)
-                    print(sum)
+        for kvp in Cart.shared.list{
+            if(kvp.value != 0){
+                for j in 0 ..< theItems.items.count{
+                    if theItems.items[j].itemName == kvp.key {
+                        let num:Int = kvp.value
+                        sum += theItems.items[j].itemPrice * Double(num)
+                        print(sum)
+                    }
                 }
             }
-            
         }
-        total(sum)
+        tot.text = "Total: \(sum)"
     }
     
-    
-    func total(_ total:Double){
-        
-        tot.text = "Total: \(total)"
-        
-    }
-    
-    func update(){
-        instanciateLables()
-        initUILabels()
-        getTotal()
-    }
-    
+
     @IBAction func checkout(_ sender: Any) {
         for l in list{
-            l.text = ""
+            //l.text = " "
+            l.removeFromSuperview()
         }
-        tot.text = "Total: 0.00"
-        
-        
+        list = []
+        Cart.shared.cleanCart()
+        tot.text = "Total: 0.0"
     }
     
-    //let vc =
-    
-//    func userAddedItems(name: String, num: Int) {
-//        print(name+" \(num)")
-//    }
-    
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "goToCart"{
-//            let dVC = segue.destination as!
-//        }
-//    }
 }

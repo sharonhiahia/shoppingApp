@@ -20,8 +20,6 @@ class ListItemsViewController: UIViewController {
     @IBOutlet weak var itemView4: UIView!
     
 
-
-    
     var views = [UIView]()
     
     var myItmes = MyItems()

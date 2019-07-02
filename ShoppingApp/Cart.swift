@@ -16,6 +16,7 @@ class Cart {
                        "Pretty ring": 0,
                        "Rose gold ring": 0,
                        "Wow bracelet": 0]
+    
     init(){
     }
     
@@ -28,6 +29,10 @@ class Cart {
         list[key] = value
     }
     
-    
+    func cleanCart(){
+        for k in list.keys{
+            list[k] = 0
+        }
+    }
 }
 

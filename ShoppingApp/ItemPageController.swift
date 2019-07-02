@@ -38,11 +38,6 @@ class ItemPageController: UIViewController {
         let itemp = theItems.items[receivedTag!-1].itemPrice
         super.viewDidLoad()
         
-        //img.image = UIImage(named: recerivedImg ?? "1")
-        //name.text = recerivedName
-        //price.text = recerivedPrice
-
-        
         img.image = UIImage(named: imgstr)
         name.text = itemname
         price.text = String(itemp)
@@ -74,10 +69,7 @@ class ItemPageController: UIViewController {
         let itemname = theItems.items[receivedTag!-1].itemName
         print(itemname)
         Cart.shared.updateCart(itemname, num)
-        
-        
-        
-    
+
     }
     
     
@@ -88,4 +80,5 @@ class ItemPageController: UIViewController {
 //        print(itemname+"\(num)")
 //        print(delegate)
 //    }
+    
 }
