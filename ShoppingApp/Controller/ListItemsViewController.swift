@@ -24,6 +24,7 @@ class ListItemsViewController: UIViewController {
     var views = [UIView]()
     
     var myItmes = MyItems()
+    //var allItems = [Item]()
     
     var sendingTag = 0
 //    var sendingImg = ""
@@ -36,6 +37,8 @@ class ListItemsViewController: UIViewController {
             updatePage(view: v)
         }
         super.viewDidLoad()
+        retriveFromDatabase()
+        
         
         
 //        // ----
@@ -53,6 +56,37 @@ class ListItemsViewController: UIViewController {
 //            print("data sent")
 //        }
 
+    }
+    
+    
+    func retriveFromDatabase(){
+        let itemsDB = Database.database().reference().child("Items")
+        
+        print(itemsDB.childByAutoId())
+        itemsDB.observe(.childAdded) { (snapshot) in
+            let snapshotValue = snapshot.value as! Dictionary<String,Any>
+            let amount = snapshotValue["ItemAmount"]!
+            let itemName = snapshotValue["ItemName"]!
+            let itemImg = snapshotValue["ItemPic"]!
+            let price = snapshotValue["ItemPrice"]!
+            
+            var itemPrice:Double = 0
+            if let x = price as? Double {
+                itemPrice = x
+            }
+            itemPrice = Double(round(itemPrice * 100)/100)
+            
+            var itemAmount:Int = 0
+            if let y = amount as? Int {
+                itemAmount = y
+            }
+            
+           
+            
+            print(itemName ,  itemImg, itemPrice, itemAmount)
+            print(type(of: itemName), type(of: itemImg), type(of: itemPrice),type(of: itemAmount))
+        }
+        
     }
 
     func updatePage(view:UIView){

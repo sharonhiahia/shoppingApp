@@ -14,12 +14,16 @@ class Item {
     var itemName:String
     var itemPrice:Double
     var itemNum:Int
-    
+
     init(img:String, name:String, price: Double, num:Int) {
         itemImg = img
         itemName = name
         itemPrice = price
         itemNum = num
     }
-    
+//    var itemImg : String = ""
+//    var itemName : String = ""
+//    var itemPrice : Double = 0
+//    var itemAmount : Int = 0
+
 }
