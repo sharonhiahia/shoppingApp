@@ -36,7 +36,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BQX-HB-0Gx">
                                 <rect key="frame" x="97.5" y="263.5" width="180" height="30"/>
@@ -136,7 +136,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="history" id="Fxh-Jz-qv7"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="showDetail" identifier="gotoSignin" id="O5g-wZ-TQk"/>
+                        <segue destination="gef-05-DCb" kind="showDetail" identifier="gotoSignin" id="zI3-Kn-Nps"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eNW-8E-XCT" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -521,7 +521,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HrJ-s3-12t">
                                 <rect key="frame" x="97.5" y="262" width="180" height="30"/>
@@ -621,7 +621,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="4bI-Cd-uJs"/>
-        <segue reference="O5g-wZ-TQk"/>
+        <segue reference="Kr9-sb-ivn"/>
     </inferredMetricsTieBreakers>
 </document>

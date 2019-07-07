@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Firebase
 
 class ListItemsViewController: UIViewController {
     
@@ -35,6 +36,22 @@ class ListItemsViewController: UIViewController {
             updatePage(view: v)
         }
         super.viewDidLoad()
+        
+        
+//        // ----
+//        let messageDB = Database.database().reference().child("Items")
+//        let messageDictionary = ["ItemName": "Nice bracelet", "ItemPrice": 100.0, "ItemPic": "1", "ItemAmount": 50] as [String : Any]
+//
+//
+//        messageDB.childByAutoId().setValue(messageDictionary){
+//            error,reference in
+//
+//            guard error == nil else {
+//                print("error has occured on creating data")
+//                return
+//            }
+//            print("data sent")
+//        }
 
     }
 
