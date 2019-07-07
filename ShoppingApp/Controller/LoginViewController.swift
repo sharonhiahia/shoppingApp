@@ -26,5 +26,7 @@ class LoginViewController: UIViewController {
         //present(mainTabCtler, animated: true, completion: nil)
     }
     
+    @IBAction func registerTapped(_ sender: Any) {
+    }
 }
 

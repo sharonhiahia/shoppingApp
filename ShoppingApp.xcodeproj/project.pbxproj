@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -25,6 +25,8 @@
 		9696BB5722C93312006EC88C /* ShoppingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9696BB5622C93312006EC88C /* ShoppingAppTests.swift */; };
 		9696BB6222C93312006EC88C /* ShoppingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9696BB6122C93312006EC88C /* ShoppingAppUITests.swift */; };
 		9696BB7022C935A0006EC88C /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9696BB6F22C935A0006EC88C /* MainTabController.swift */; };
+		96D4CB6E22D1B768008B3202 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D4CB6D22D1B768008B3202 /* RegisterViewController.swift */; };
+		96D4CB7022D1B802008B3202 /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D4CB6F22D1B802008B3202 /* PersonViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,8 @@
 		9696BB6122C93312006EC88C /* ShoppingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingAppUITests.swift; sourceTree = "<group>"; };
 		9696BB6322C93312006EC88C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9696BB6F22C935A0006EC88C /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
+		96D4CB6D22D1B768008B3202 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		96D4CB6F22D1B802008B3202 /* PersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
 		C09AFDF0FE687AC829F1549C /* Pods_ShoppingAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShoppingAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D84698B97BAAAB6A2AF19217 /* Pods-ShoppingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShoppingApp.debug.xcconfig"; path = "Target Support Files/Pods-ShoppingApp/Pods-ShoppingApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -143,6 +147,8 @@
 				9605024E22C953010063F23B /* ListItemsViewController.swift */,
 				9644DF3222CAD90B00C19D27 /* ShoppingCartViewController.swift */,
 				9696BB4122C93311006EC88C /* AppDelegate.swift */,
+				96D4CB6D22D1B768008B3202 /* RegisterViewController.swift */,
+				96D4CB6F22D1B802008B3202 /* PersonViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -210,7 +216,6 @@
 				095D39187C66C6FE0F6B5397 /* Pods-ShoppingAppUITests.debug.xcconfig */,
 				6F9FDF42C87E4323D75325BA /* Pods-ShoppingAppUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -437,11 +442,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9696BB4422C93311006EC88C /* LoginViewController.swift in Sources */,
+				96D4CB6E22D1B768008B3202 /* RegisterViewController.swift in Sources */,
 				9696BB4222C93311006EC88C /* AppDelegate.swift in Sources */,
 				9644DF3322CAD90B00C19D27 /* ShoppingCartViewController.swift in Sources */,
 				9605024F22C953010063F23B /* ListItemsViewController.swift in Sources */,
 				9696BB7022C935A0006EC88C /* MainTabController.swift in Sources */,
 				9648893722CA82FA0003786B /* Item.swift in Sources */,
+				96D4CB7022D1B802008B3202 /* PersonViewController.swift in Sources */,
 				9605024D22C9502F0063F23B /* ItemPageController.swift in Sources */,
 				9648893922CA83E90003786B /* MyItems.swift in Sources */,
 				9648893C22CACD060003786B /* Cart.swift in Sources */,
