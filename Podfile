@@ -17,6 +17,8 @@ target 'ShoppingApp' do
   end
 
   pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database'
   pod 'SVProgressHUD'
 
 end

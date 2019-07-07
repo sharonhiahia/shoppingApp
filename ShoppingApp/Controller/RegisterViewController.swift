@@ -7,11 +7,17 @@
 //
 
 import UIKit
+import Firebase
+import SVProgressHUD
 
 class RegisterViewController: UIViewController {
-
-    @IBOutlet weak var password: UITextField!
+    
     @IBOutlet weak var username: UITextField!
+    
+    
+    @IBOutlet weak var password: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -29,6 +35,24 @@ class RegisterViewController: UIViewController {
     }
     */
     @IBAction func registerTapped(_ sender: Any) {
+        SVProgressHUD.show()
+        
+        let email = username.text!
+        let pw = password.text!
+        
+        //TODO: Set up a new user on our Firbase database
+        Auth.auth().createUser(withEmail: email, password: pw) {
+            authResult, error in
+            
+            guard let user = authResult?.user, error == nil else {
+                print("error has occured")
+                SVProgressHUD.dismiss()
+                return
+            }
+            print("\(user.email!) created")
+            SVProgressHUD.dismiss()
+            self.performSegue(withIdentifier: "gotoShopping", sender: self)
+        }
     }
     
 }

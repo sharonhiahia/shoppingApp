@@ -52,7 +52,7 @@
                                 <rect key="frame" x="159" y="418" width="57" height="30"/>
                                 <state key="normal" title="Register"/>
                                 <connections>
-                                    <action selector="registerTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dEB-7B-uQq"/>
+                                    <segue destination="PEO-58-BTN" kind="show" id="ttX-9R-jJh"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -73,12 +73,12 @@
                     <connections>
                         <outlet property="password" destination="fMB-Oj-FBT" id="bDl-4t-NSD"/>
                         <outlet property="username" destination="BQX-HB-0Gx" id="8oh-jy-c1O"/>
-                        <segue destination="PEO-58-BTN" kind="show" identifier="goToRegiser" id="ziw-7Z-dvQ"/>
+                        <segue destination="rKy-0T-0uF" kind="showDetail" identifier="fromRegisterToShopping" id="4bI-Cd-uJs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-772" y="80.50974512743629"/>
+            <point key="canvasLocation" x="324" y="-831"/>
         </scene>
         <!--Shopping Cart View Controller-->
         <scene sceneID="diU-cJ-hUg">
@@ -141,7 +141,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eNW-8E-XCT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1711" y="856"/>
+            <point key="canvasLocation" x="1780" y="-993"/>
         </scene>
         <!--List Items View Controller-->
         <scene sceneID="ONQ-lI-rFp">
@@ -561,7 +561,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="04p-WC-JPH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="81"/>
+            <point key="canvasLocation" x="-129" y="81"/>
         </scene>
         <!--Main Tab Controller-->
         <scene sceneID="rl0-Sw-mc9">
@@ -617,10 +617,11 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BDX-re-xMA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1590" y="81"/>
+            <point key="canvasLocation" x="-762" y="-830"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="clJ-fN-BgC"/>
+        <segue reference="4bI-Cd-uJs"/>
+        <segue reference="O5g-wZ-TQk"/>
     </inferredMetricsTieBreakers>
 </document>

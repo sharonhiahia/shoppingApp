@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import SVProgressHUD
 
 class LoginViewController: UIViewController {
 
@@ -21,12 +22,24 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func loginTapped(_ sender: Any) {
-        //let mainTabCtler = storyboard?.instantiateInitialViewController() as! MainTabController
-        
-        //present(mainTabCtler, animated: true, completion: nil)
+        SVProgressHUD.show()
+        //TODO: Log in the user
+        Auth.auth().signIn(withEmail: username.text!, password: password.text!) {
+            authResult, error in
+            
+            guard let user = authResult?.user, error == nil else {
+                print("error has occured on login")
+                SVProgressHUD.dismiss()
+                return
+            }
+            print("\(user.email!) logged in")
+            SVProgressHUD.dismiss()
+            self.performSegue(withIdentifier: "fromRegisterToShopping", sender: self)
+        }
     }
     
     @IBAction func registerTapped(_ sender: Any) {
+        
     }
 }
 

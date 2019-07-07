@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import SVProgressHUD
 
 class PersonViewController: UIViewController {
 
@@ -17,6 +19,19 @@ class PersonViewController: UIViewController {
     }
     
     @IBAction func logoutTapped(_ sender: Any) {
+        SVProgressHUD.show()
+        //TODO: Log in the user
+        do{
+            try Auth.auth().signOut()
+            SVProgressHUD.dismiss()
+            self.performSegue(withIdentifier: "gotoSignin", sender: self)
+            //navigationController?.popToRootViewController(animated: true)
+        }
+        catch{
+            // catch throw here.
+            print("sign out error happened.")
+            SVProgressHUD.dismiss()
+        }
     }
     
     /*
