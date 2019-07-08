@@ -24,20 +24,23 @@ class ListItemsViewController: UIViewController {
     var views = [UIView]()
     
     var myItmes = MyItems()
-    //var allItems = [Item]()
+    
+    var allItems = [myItem]()
     
     var sendingTag = 0
+    
 //    var sendingImg = ""
 //    var sendingName = ""
 //    var sendingPrice = ""
     
     override func viewDidLoad() {
         views = [itemView1,itemView2,itemView3,itemView4]
-        for v in views{
-            updatePage(view: v)
-        }
+//        for v in views{
+//            updatePage(view: v)
+//        }
         super.viewDidLoad()
         retriveFromDatabase()
+        print("number of items: \(allItems.count)")
         
         
         
@@ -66,8 +69,8 @@ class ListItemsViewController: UIViewController {
         itemsDB.observe(.childAdded) { (snapshot) in
             let snapshotValue = snapshot.value as! Dictionary<String,Any>
             let amount = snapshotValue["ItemAmount"]!
-            let itemName = snapshotValue["ItemName"]!
-            let itemImg = snapshotValue["ItemPic"]!
+            let name = snapshotValue["ItemName"]!
+            let img = snapshotValue["ItemPic"]!
             let price = snapshotValue["ItemPrice"]!
             
             var itemPrice:Double = 0
@@ -81,22 +84,42 @@ class ListItemsViewController: UIViewController {
                 itemAmount = y
             }
             
-           
+            var itemName:String = ""
+            if let z = name as? String{
+                itemName = z
+            }
             
-            print(itemName ,  itemImg, itemPrice, itemAmount)
-            print(type(of: itemName), type(of: itemImg), type(of: itemPrice),type(of: itemAmount))
+            var itemImg:String = ""
+            if let w = img as? String{
+                itemImg = w
+            }
+            
+            let item = myItem()
+            item.itemImg = itemImg
+            item.itemName = itemName
+            item.itemAmount = itemAmount
+            item.itemPrice = itemPrice
+            
+            let view = Int(itemImg)!
+            
+            //MyItems.shared.addItems(with: item)
+            self.allItems.append(item)
+            print(itemName, itemImg, itemPrice, itemAmount)
+            self.updatePage(self.views[view - 1], item )
+            print("count for now: \(self.allItems.count)")
+            //print(type(of: itemName), type(of: itemImg), type(of: itemPrice),type(of: itemAmount))
         }
         
     }
 
-    func updatePage(view:UIView){
+    func updatePage(_ view:UIView,_ item: myItem){
 
         var imgView = UIImageView()
         var name = UILabel()
         var price = UILabel()
         
-        let tag = view.tag
-        let item = myItmes.items[tag - 1]
+        //let tag = view.tag
+        //let item = myItmes.items[tag - 1]
 
         imgView = view.subviews[0] as! UIImageView
         name = view.subviews[1] as! UILabel

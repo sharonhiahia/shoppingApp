@@ -17,6 +17,7 @@
 		9648893922CA83E90003786B /* MyItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9648893822CA83E90003786B /* MyItems.swift */; };
 		9648893C22CACD060003786B /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9648893B22CACD060003786B /* Cart.swift */; };
 		966251F522D1AD8100A42FDB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 966251F422D1AD8100A42FDB /* GoogleService-Info.plist */; };
+		9667207122D2F78300D8C6DA /* myItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9667207022D2F78300D8C6DA /* myItem.swift */; };
 		9696BB4222C93311006EC88C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9696BB4122C93311006EC88C /* AppDelegate.swift */; };
 		9696BB4422C93311006EC88C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9696BB4322C93311006EC88C /* LoginViewController.swift */; };
 		9696BB4722C93311006EC88C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9696BB4522C93311006EC88C /* Main.storyboard */; };
@@ -61,6 +62,7 @@
 		9648893822CA83E90003786B /* MyItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyItems.swift; sourceTree = "<group>"; };
 		9648893B22CACD060003786B /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
 		966251F422D1AD8100A42FDB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9667207022D2F78300D8C6DA /* myItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myItem.swift; sourceTree = "<group>"; };
 		9696BB3E22C93311006EC88C /* ShoppingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9696BB4122C93311006EC88C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9696BB4322C93311006EC88C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				9648893622CA82FA0003786B /* Item.swift */,
 				9648893B22CACD060003786B /* Cart.swift */,
 				9648893822CA83E90003786B /* MyItems.swift */,
+				9667207022D2F78300D8C6DA /* myItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -449,6 +452,7 @@
 				9696BB7022C935A0006EC88C /* MainTabController.swift in Sources */,
 				9648893722CA82FA0003786B /* Item.swift in Sources */,
 				96D4CB7022D1B802008B3202 /* PersonViewController.swift in Sources */,
+				9667207122D2F78300D8C6DA /* myItem.swift in Sources */,
 				9605024D22C9502F0063F23B /* ItemPageController.swift in Sources */,
 				9648893922CA83E90003786B /* MyItems.swift in Sources */,
 				9648893C22CACD060003786B /* Cart.swift in Sources */,
